@@ -1,3 +1,3 @@
 # rConfig_ExtremeTemplate
 
-Será descrito aqui o código da minha template
+Criado a template para o switch Extreme.
