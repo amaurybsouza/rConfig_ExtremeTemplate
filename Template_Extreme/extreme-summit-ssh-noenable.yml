@@ -17,17 +17,17 @@ connect:
   port: 22
 auth:
   # Set username name prompt. Must be in quotes. If left blank, username will not be sent.
-  username: "Username:"
+  username: "username:"
   # Set password name prompt. Must be in quotes
   password: "password:"
   # Set enable mode on or off
   enable: off
   # set enable mode command. Must be in quotes
-  enableCmd: "configure"
+  enableCmd: " "
   # set enable mode password prompt. Must be in quotes
   enablePassPrmpt: "password:"
   # set HP 'press any key' status. Is 'on' or 'off'
-  hpAnyKeyStatus: off
+  hpAnyKeyStatus: on
   # set HP 'press any key' prompt. 
   hpAnyKeyPrmpt: "Press <SPACE> to continue or <Q> to quit:"  
 config:
@@ -36,14 +36,14 @@ config:
     # Disable config scrolling/ paging command. on/off
     paging: on
     # Disable config scrolling/ paging command. Leave blank, or set as required. Must place command in quotations
-    pagingCmd: "enable terminal length 0"
+    pagingCmd: "disable clipaging"
     # re-enable config scrolling/ paging command. Leave blank, or set as required. Must place command in quotations
-    resetPagingCmd: "enable terminal length 0"
+    resetPagingCmd: "disable clipaging"
     # Set pager prompt. Must place command in quotations
-    pagerPrompt: "--More--"
+    pagerPrompt: "Next page: Space, quit: Q"
     # Set pager prompt key-stroke. Must place command in quotations
     pagerPromptCmd: " "
     # Save configuration command. Leave blank, or set as required. Must be in quotes
-    saveConfig: "save"
+    saveConfig: " "
     # Set exit command. Must place command in quotations
     exitCmd: "quit"
